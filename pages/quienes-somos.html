@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Cetepe</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <div class="logo"></div>
+        <div class="toggle"></div>
+      </header>
+      <div class="background-image"></div>
+      <!-- <<video src="SLIDER.mp4" muted loop autoplay></video> -->
+      <!-- <img src="hugo.png"/> -->
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h2>Hugo quintana</h2>
+        <h3>CEO. cetepe.</h3>
+        <h1>
+          Ingeniero Industrial con mas de 25 años de experiencia en el sector
+          publico y privado.
+        </h1>
+        <div></div>
+        <div></div>
+        <ul>
+          <li>
+            Ex-Subsecretario de calidad del Ministerio de Producción Comercio
+            Exterior Inversiones y Pesca
+          </li>
+          <li>
+            Ex-Gerente de Proyectos Emblemáticos del Ministerio de Producción
+          </li>
+          <li>Ex-Gerente de supply chain de Kelloggs Ecuador</li>
+          <li>Actual CEO y Director de Proyectos en CETEPE</li>
+        </ul>
+      </div>
+
+      <ul class="socials">
+        <li>
+          <a href="#"><img src="/img/icons8-twitter-48.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/img/icons8-instagram-48.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/img/icons8-facebook-48.png" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="menu">
+      <ul>
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/pages/objetivo.html">Objetivos</a></li>
+        <li><a href="/pages/noticias.html">Noticias</a></li>
+        <li><a href="/pages/productos.html">Nuestros Productos</a></li>
+        <li><a href="/pages/quienes-somos.html">Quienes Somos</a></li>
+        <li><a href="/pages/contacto.html">Contactanos</a></li>
+      </ul>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
